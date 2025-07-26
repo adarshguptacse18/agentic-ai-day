@@ -1,0 +1,5 @@
+GCLOUD_LOCATION: "us-central1"
+GCLOUD_PROJECT_ID: "steady-habitat-467108-n7"
+BACKEND_URL: "http://localhost:8081/chat"
+STORAGE_BUCKET_NAME: "agentic-ai"
+DB_COLLECTION_NAME: "agentic-ai"
