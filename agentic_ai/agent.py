@@ -35,7 +35,7 @@ root_agent = Agent(
     ],
     planner=BuiltInPlanner(
         thinking_config=types.ThinkingConfig(
-            thinking_budget=80000,
+            thinking_budget=24576,
         )
     ),
     before_model_callback=modify_image_data_in_history,
