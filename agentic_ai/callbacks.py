@@ -42,7 +42,7 @@ def modify_image_data_in_history(
                     continue
 
                 placeholder_prefix = f"[ATTACHMENT-ID "
-                if user_message_count <= 3:
+                if user_message_count <= 1:
                     modified_content_parts.append(part)
 
             # This will modify the contents inside the llm_request

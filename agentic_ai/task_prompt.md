@@ -18,7 +18,7 @@ Your primary task is to analyze provided image(s) and/or video frames, which may
 - Output a single, valid JSON object per document, strictly following the schema below.
 - **Do not include any conversational text, explanations, or markdown outside of the JSON block.**
 - If you need to invoke a tool for further processing (e.g., OCR, barcode reading, warranty lookup), suggest the tool name and required parameters in your internal reasoning.
-- If something important is missing like please ask user to give that as input  then store the output json schema
+- If something important is missing like please ask user to give that as input  then store the output json schema using `save_attachment_data` tool. Extract the user id from the session info present in the agentic
  
 **Output JSON Schema:**
 ```json

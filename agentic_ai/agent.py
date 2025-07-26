@@ -1,9 +1,9 @@
 # agentic_ai/agent.py
 
 from google.adk.agents import Agent
-# from agentic_ai.tools import (
-#     get_attachment_data,
-# )
+from agentic_ai.tools import (
+    save_attachment_data,
+)
 from agentic_ai.callbacks import modify_image_data_in_history
 import os
 from settings import get_settings
@@ -29,7 +29,7 @@ root_agent = Agent(
     ),
     instruction=task_prompt,
     tools=[
-        # get_attachment_data
+        save_attachment_data
     ],
     planner=BuiltInPlanner(
         thinking_config=types.ThinkingConfig(
