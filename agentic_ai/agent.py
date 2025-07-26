@@ -3,6 +3,7 @@
 from google.adk.agents import Agent
 from agentic_ai.tools import (
     save_attachment_data,
+    get_all_data_for_a_user
 )
 from agentic_ai.callbacks import modify_image_data_in_history
 import os
@@ -29,11 +30,12 @@ root_agent = Agent(
     ),
     instruction=task_prompt,
     tools=[
-        save_attachment_data
+        save_attachment_data,
+        get_all_data_for_a_user
     ],
     planner=BuiltInPlanner(
         thinking_config=types.ThinkingConfig(
-            thinking_budget=2048,
+            thinking_budget=80000,
         )
     ),
     before_model_callback=modify_image_data_in_history,

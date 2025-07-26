@@ -10,6 +10,7 @@ from google.cloud.firestore_v1.base_query import And
 from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
 from settings import get_settings
 from google import genai
+from google.adk.tools import ToolContext
 
 SETTINGS = get_settings()
 DB_CLIENT = firestore.Client(
@@ -56,7 +57,7 @@ def save_attachment_data(
                     "warrantyDetails": { ... }
                 }
             }
-
+        tool_context (ToolContext): The tool context containing user and session information.
     Returns:
         str: A success message with the document ID.
 
@@ -73,7 +74,8 @@ def save_attachment_data(
 
         if "extractedData" not in json_data:
             raise ValueError("extractedData is required in json_data")
-
+        
+        user_id = tool_context._invocation_context.user_id
         COLLECTION.add({"user_id": user_id, "data": json_data})
 
         return json_data
@@ -83,68 +85,71 @@ def save_attachment_data(
 
 
 # TODO: This needs to be implemented properly. Please update this to get all via user id 
-def get_all_receipts_data_for_a_user(
+def get_all_data_for_a_user(
+    tool_context: ToolContext,
 ) -> str:
     """
-    Filter receipts by metadata within a specific time range and optionally by amount.
+    This function extracts all the transactions for a user 
 
     Args:
-        start_time (str): The start datetime for the filter (in ISO format, e.g. 'YYYY-MM-DDTHH:MM:SS.ssssssZ').
-        end_time (str): The end datetime for the filter (in ISO format, e.g. 'YYYY-MM-DDTHH:MM:SS.ssssssZ').
-        min_total_amount (float): The minimum total amount for the filter (inclusive). Defaults to -1.
-        max_total_amount (float): The maximum total amount for the filter (inclusive). Defaults to -1.
+        tool_context (ToolContext): The tool context containing user and session information.
 
     Returns:
-        str: A string containing the list of receipt data matching all applied filters.
-
+        json_data (List[Dict[str, Any]]): A list of dictionaries containing document information, where each dictionary has the following structure:
+            {
+                "documentType": "String", // "Receipt", "Product", "Warranty", "Other"
+                "isPartialReceipt": "Boolean", // Only for "Receipt"
+                "extractedData": {
+                    "receiptDetails": {
+                        "merchantName": "String",
+                        "purchaseDate": "String", // YYYY-MM-DD
+                        "purchaseTime": "String", // HH:MM:SS
+                        "totalAmount": "Number",
+                        "currency": "String",
+                        "taxAmount": "Number",
+                        "discountAmount": "Number",
+                        "paymentMethod": "String",
+                        "receiptNumber": "String",
+                        "items": [
+                            {
+                                "name": "String",
+                                "quantity": "Number",
+                                "unitPrice": "Number",
+                                "lineTotal": "Number",
+                                "category": "String"
+                            }
+                        ]
+                    },
+                    "productDetails": { ... },
+                    "warrantyDetails": { ... }
+                }
+            }
     Raises:
         Exception: If the search failed or input is invalid.
     """
     try:
-        # Validate start and end times
-        if not isinstance(start_time, str) or not isinstance(end_time, str):
-            raise ValueError("start_time and end_time must be strings in ISO format")
-        try:
-            datetime.datetime.fromisoformat(start_time.replace("Z", "+00:00"))
-            datetime.datetime.fromisoformat(end_time.replace("Z", "+00:00"))
-        except ValueError:
-            raise ValueError("start_time and end_time must be strings in ISO format")
-
         # Start with the base collection reference
         query = COLLECTION
+        user_id = tool_context._invocation_context.user_id
 
         # Build the composite query by properly chaining conditions
         # Notes that this demo assume 1 user only,
         # need to refactor the query for multiple user
         filters = [
-            FieldFilter("transaction_time", ">=", start_time),
-            FieldFilter("transaction_time", "<=", end_time),
+            FieldFilter("user_id", "==", user_id),
         ]
 
-        # Add optional filters
-        if min_total_amount != -1:
-            filters.append(FieldFilter("total_amount", ">=", min_total_amount))
-
-        if max_total_amount != -1:
-            filters.append(FieldFilter("total_amount", "<=", max_total_amount))
 
         # Apply the filters
         composite_filter = And(filters=filters)
         query = query.where(filter=composite_filter)
 
         # Execute the query and collect results
-        search_result_description = "Search by Metadata Results:\n"
+        final_results = []
         for doc in query.stream():
             data = doc.to_dict()
-            data.pop(
-                EMBEDDING_FIELD_NAME, None
-            )  # Remove embedding as it's not needed for display
-
-            search_result_description += f"\n{RECEIPT_DESC_FORMAT.format(**data)}"
-
-        return search_result_description
+            final_results.append(data["data"])
+        return final_results
     except Exception as e:
         raise Exception(f"Error filtering receipts: {str(e)}")
 
-
-# def generate_insights: calls above function and then passes it to llm. 
