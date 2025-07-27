@@ -11,4 +11,8 @@ dependencies = [
     "gradio>=5.23.1",
     "pydantic>=2.10.6",
     "pydantic-settings[yaml]>=2.8.1",
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
 ]

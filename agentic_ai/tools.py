@@ -1,4 +1,3 @@
-
 # expense_manager_agent/tools.py
 
 import datetime
@@ -14,12 +13,11 @@ from google.adk.tools import ToolContext
 import time
 import json
 
-SETTINGS = get_settings()
-DB_CLIENT = firestore.Client(
-    project=SETTINGS.GCLOUD_PROJECT_ID
-)  # Will use "(default)" database
-COLLECTION = DB_CLIENT.collection(SETTINGS.DB_COLLECTION_NAME)
+from agentic_ai.wallet_pass_service.wallet_pass_service import get_generic_pass_token
 
+SETTINGS = get_settings()
+DB_CLIENT = firestore.Client(project=SETTINGS.GCLOUD_PROJECT_ID)  # Will use "(default)" database
+COLLECTION = DB_CLIENT.collection(SETTINGS.DB_COLLECTION_NAME)
 
 
 def save_attachment_data(
@@ -27,10 +25,10 @@ def save_attachment_data(
     tool_context: ToolContext,
 ) -> str:
     """
-    Store document data in the database from JSON format.
+    Store document data in the database from JSON format and return a Google wallet token.
     Args:
         json_data (Dict[str, Any]): JSON data containing document information with the following structure:
-        
+
         {
             "merchantName": "String",
             "purchasedAt": "String", // YYYY-MM-DD HH:MM:SS
@@ -51,10 +49,10 @@ def save_attachment_data(
                 }
             ]
         }
-        
+
         tool_context (ToolContext): The tool context containing user and session information.
     Returns:
-        str: A success message with the document ID.
+        dict: {'wallet_token': str} // Google wallet token, needs to be sent to user.
 
     Raises:
         Exception: If the operation failed or input is invalid.
@@ -67,14 +65,28 @@ def save_attachment_data(
 
         user_id = tool_context._invocation_context.user_id
         COLLECTION.add({"user_id": user_id, "data": json_data})
+
+        title, header, text_modules = "Merchant", "", []
+        if json_data.get("merchantName"):
+            title = json_data["merchantName"]
+
+        if json_data.get("totalAmount"):
+            header = str(json_data["totalAmount"])
+
+        for item in json_data.get("items") or []:
+            text_modules.append(
+                {"header": item.get("name"), "body": str(item.get("totalPrice")), "id": "text_module_id"}
+            )
+
+        generic_pass_token = get_generic_pass_token(title, header, text_modules)
+
         end_time = time.time()
         print(f"TIME TAKEN TO SAVE DOCUMENT: {end_time - start_time} seconds")
-        return json_data
+        return {"wallet_token": generic_pass_token}
     except Exception as e:
         end_time = time.time()
         print(f"TIME TAKEN TO SAVE DOCUMENT (---ERROR---): {end_time - start_time} seconds")
         raise Exception(f"Failed to store document: {str(e)}")
-
 
 
 def get_all_purchases_for_a_user(
@@ -125,7 +137,6 @@ def get_all_purchases_for_a_user(
             FieldFilter("user_id", "==", user_id),
         ]
 
-
         # Apply the filters
         composite_filter = And(filters=filters)
         query = query.where(filter=composite_filter)
@@ -137,14 +148,13 @@ def get_all_purchases_for_a_user(
             final_results.append(data["data"])
         end_time = time.time()
         print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER: {end_time - start_time} seconds")
-        
+
         # stringify the final_results
         return json.dumps(final_results)
     except Exception as e:
         end_time = time.time()
         print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER (---ERROR---): {end_time - start_time} seconds")
         raise Exception(f"Error filtering receipts: {str(e)}")
-
 
 
 # def save_all_the_demo_transactions(

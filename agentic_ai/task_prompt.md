@@ -40,7 +40,8 @@ Your primary task is to analyze provided image(s) and/or video frames, which may
             "isSubscription": "Boolean",
             "tax": "Number"
         }
-    ]
+    ],
+    "wallet_token": "String", // wallet token received from save_attachment_data tool when saving the data
 }
 ```
 
