@@ -1,7 +1,7 @@
 # agentic_ai/agent.py
 
 from google.adk.agents import Agent
-from agentic_ai.tools import save_attachment_data, get_all_purchases_for_a_user
+from agentic_ai.tools import save_attachment_data, get_all_purchases_for_a_user, generate_wallet_pass_url_for_shopping_list
 from agentic_ai.callbacks import modify_image_data_in_history
 import os
 from settings import get_settings
@@ -26,7 +26,7 @@ root_agent = Agent(
         "Personal expense agent to help user track expenses, analyze receipts and purchases, and manage their financial records"
     ),
     instruction=task_prompt,
-    tools=[save_attachment_data, get_all_purchases_for_a_user],
+    tools=[save_attachment_data, get_all_purchases_for_a_user, generate_wallet_pass_url_for_shopping_list],
     planner=BuiltInPlanner(
         thinking_config=types.ThinkingConfig(
             thinking_budget=8096,

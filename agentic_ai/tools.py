@@ -139,7 +139,7 @@ def get_all_purchases_for_a_user(
 
         # Apply the filters
         composite_filter = And(filters=filters)
-        query = query.where(filter=composite_filter)
+        query = query.where(filter=composite_filter).limit(20)
 
         # Execute the query and collect results
         final_results = []
@@ -156,6 +156,39 @@ def get_all_purchases_for_a_user(
         print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER (---ERROR---): {end_time - start_time} seconds")
         raise Exception(f"Error filtering receipts: {str(e)}")
 
+
+def generate_wallet_pass_url_for_shopping_list(
+    category: str,
+    item_names: list[str],
+    tool_context: ToolContext,
+) -> str:
+    """
+    Generate a google wallet pass URL for the items that needs to be shopped
+
+    Args:
+        category (str): category of the items (in case of multiple categories, use comma separated string but 2 categories max)
+        item_names (list[str]): list of item names to be shopped (name can contain quantity)
+        tool_context (ToolContext): The tool context containing user and session information.
+
+    Returns:
+        str: URL of the google wallet pass.
+    """
+    start_time = time.time()
+    try:
+        title = "Shopping List"
+        header = category
+        text_modules = [{"header": item_name, "body": '1', "id": "text_module_id"} for item_name in item_names]
+        generic_pass_token = get_generic_pass_token(title, header, text_modules)
+        end_time = time.time()
+        print(f"TIME TAKEN TO GENERATE WALLET TOKEN FOR SHOPPING LIST: {end_time - start_time} seconds")
+        return f"https://pay.google.com/gp/v/save/{generic_pass_token}"
+
+
+    except Exception as e:
+        end_time = time.time()
+        print(f"TIME TAKEN TO GENERATE WALLET TOKEN FOR SHOPPING LIST (---ERROR---): {end_time - start_time} seconds")
+        raise Exception(f"Error generating wallet token for shopping list: {str(e)}")
+    pass
 
 # def save_all_the_demo_transactions(
 #     tool_context: ToolContext,

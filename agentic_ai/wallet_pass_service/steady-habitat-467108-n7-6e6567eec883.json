@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "steady-habitat-467108-n7",
+  "private_key_id": "6e6567eec883cdcdf0060a58f2bbc05cfe17bf11",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDSnp241EoKzky6\ntp3kBPiThcJlJdr5iFn2jYhFR+FViKP2HvwV7CJv4Rz6FpYVgjuTzieSg7KRMKaF\n5ieOrcEXlOauOlRjs/Udf0BFV8SPgITbfV8PhNTNBIMTHBr6ZXQ9K3JVa9GFmhk0\nsDnOIb5BIjmGBumNoGFoCCjgyNRc8ZCOhTmZNWK31XJt0PJvNP+jBS7Vv0hvk1nT\nrsz4SDa8aYAqeIEaukr3mDGpfXNXivfmjO+qiUIAN8jCIh4mjI8PZpDzJtXmbQes\nyw7z2zOhkbjlV1ZpXIhZpF+xAih68oAOPZyFMWy3OFeFd+Qer3YQK1UetS1c9W9d\nawl7FFz/AgMBAAECggEAHUkJxC/cZbk+qP2IYbKhP53rJDZJxsWDQMl4J63xcnuv\n1KKFSaUOOsExzsJCNxZnI0uYbAJc21xI4zhXyrp1LUq6coJQxpY4oFPXw2yLO6rS\njlRV2eoNzr3wXcFcLPHbYj/+w0rdFLcTByTzvKorcpIILo8afWNN9/GegXbbNFrv\nukRigrydKBIw9WOxYIq0SGnZ8nOZpWTgt+5TL9I+ucCdYQYnrdmPlbWxUxzUdAGl\nTrlVkxzMjoc7vzBv8zz9hpcy3Ni3BOQUTECB4eXzuTRkcavr4pUoHjA2Zf5orL5r\nzYNARQRWYf0yuaSnnCb3v4n8aoA1YXb9APkJwb7qRQKBgQDr0tYRjkvE0wwhBrD8\nk38JFCRfkFZOErkFRrf32+u2UxZbXUOihEd560b1V2fqtoNZ4d/XkIhfBLI61k0C\noD8cDnvxBZBcqmGC3HwlYoFKdHuSLhMhWei1WJCFFUKaVrErn/QjuPlk6ktJFLv6\nwyDEbFCUfF4QMYkhummNhfXBZQKBgQDko77d5qsyTieOWVOomFrY9WMDCd1zMSrJ\nSJkU9nONAuazM9gn7NCGCA2rmoSu05EY0VFRriSTDEVsenT0UMXAU/tl0Nw4Cocf\nuYtLi7WInXhub6yrp/ELXRoS/F3QYZu0Xwfk69W4iklWOSBzReGZl46e9vfBL/a7\n2QcqqWAQkwKBgQDEoIMFGFRsxFv0nZOsxX7CnxzE4aBUcJ/8mj6CV8htuVGG1Hi0\nZP8D1PzRTBPFTHCw3Pi60DQkpdHF5TFI4zw7tIf7Ktx3p0iuyBBrS3rqDb2K4Qfq\nYwD5U+MMU/G4plgLO89gibbIQeKMCNHEADauEHIPnLMBZYwlpzyjV/LVUQKBgQCi\nbk4n2TsgdvOVJpLPgMVxwwr/Wp/PuUtbSk8u3FOFB12cTCWxX4VY4xnLIvBGP5mi\nVvp9m8jyCtK7WVgDRernUwKT98irq5cJi8iQ+AUUtEKduoqiPKJ7Xz4p5M5FP0Ld\n5nF2SbFA9EVbkyQhoLDAbDJvbqbewVN5apqzzTapLwKBgQCQq0lk1xm88OptzOHm\nronPFeqStEX02d735kVVifSc9xJECryiCdMvUsybELOKwEUFpCdJzbg5iqp0IH03\nNajidF074MNBBHBTrfAAfC38Dp1i1Z0LEfdJM+EjV2dMWeeJgNTJiKozeaI5SKQX\nVcQUVuNXrEyZ7AQqBHozoPsIbg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "wallet-rasheed@steady-habitat-467108-n7.iam.gserviceaccount.com",
+  "client_id": "100535277459310216686",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wallet-rasheed%40steady-habitat-467108-n7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
