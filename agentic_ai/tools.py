@@ -139,7 +139,7 @@ def get_all_purchases_for_a_user(
 
         # Apply the filters
         composite_filter = And(filters=filters)
-        query = query.where(filter=composite_filter).limit(20)
+        query = query.where(filter=composite_filter)
 
         # Execute the query and collect results
         final_results = []
