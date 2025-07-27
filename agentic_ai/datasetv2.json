@@ -1,0 +1,1458 @@
+[
+  {
+    "merchantName": "Reliance Smart",
+    "purchasedAt": "01-06-2025 19:30",
+    "totalAmount": 2850.75,
+    "currency": "INR",
+    "taxAmount": 142.5,
+    "purchaseNumber": "RS20250601001",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Aashirvaad Atta (5kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 280.0,
+        "totalPrice": 280.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 3,
+        "unitPrice": 66.0,
+        "totalPrice": 198.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Britannia Good Day Biscuits",
+        "category": "Snacks",
+        "quantity": 2,
+        "unitPrice": 30.0,
+        "totalPrice": 60.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Fresh Vegetables Mix (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 150.0,
+        "totalPrice": 150.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Surf Excel Detergent (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 180.0,
+        "totalPrice": 180.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Colgate Toothpaste (150g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 99.0,
+        "totalPrice": 99.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Coca-Cola (2L)",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 90.0,
+        "totalPrice": 90.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Maggi Noodles (4 Pcs)",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 60.0,
+        "totalPrice": 60.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Swiggy",
+    "purchasedAt": "03-06-2025 21:00",
+    "totalAmount": 450.0,
+    "currency": "INR",
+    "taxAmount": 45.0,
+    "purchaseNumber": "SWG20250603002",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Chicken Biryani",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 350.0,
+        "totalPrice": 350.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Coke (300ml)",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 40.0,
+        "totalPrice": 40.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Kirana Store",
+    "purchasedAt": "05-06-2025 08:15",
+    "totalAmount": 130.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LKS20250605003",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 68.0,
+        "totalPrice": 68.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Bread (Brown)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 35.0,
+        "totalPrice": 35.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Eggs (6 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 27.0,
+        "totalPrice": 27.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "PVR Cinemas",
+    "purchasedAt": "07-06-2025 15:00",
+    "totalAmount": 700.0,
+    "currency": "INR",
+    "taxAmount": 105.0,
+    "purchaseNumber": "PVR20250607004",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Movie Ticket: Inside Out 2",
+        "category": "Entertainment",
+        "quantity": 2,
+        "unitPrice": 250.0,
+        "totalPrice": 500.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Popcorn (Large)",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 200.0,
+        "totalPrice": 200.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Ola Cabs",
+    "purchasedAt": "07-06-2025 14:30",
+    "totalAmount": 180.0,
+    "currency": "INR",
+    "taxAmount": 9.0,
+    "purchaseNumber": "OLA20250607005",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Ride to PVR Cinemas",
+        "category": "Transportation",
+        "quantity": 1,
+        "unitPrice": 180.0,
+        "totalPrice": 180.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Tea Stall",
+    "purchasedAt": "08-06-2025 09:00",
+    "totalAmount": 20.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LTS20250608006",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Chai",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 20.0,
+        "totalPrice": 20.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Swiggy",
+    "purchasedAt": "09-06-2025 13:00",
+    "totalAmount": 380.0,
+    "currency": "INR",
+    "taxAmount": 38.0,
+    "purchaseNumber": "ZMT20250609007",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Veg Thali",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 300.0,
+        "totalPrice": 300.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Fresh Lime Soda",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 65.0,
+        "totalPrice": 65.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "More Supermarket",
+    "purchasedAt": "11-06-2025 18:00",
+    "totalAmount": 1560.5,
+    "currency": "INR",
+    "taxAmount": 78.0,
+    "purchaseNumber": "MORE20250611008",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Fortune Refined Oil (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 160.0,
+        "totalPrice": 160.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Sugar (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 42.0,
+        "totalPrice": 42.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Fresh Fruits (Apples, Bananas)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 200.0,
+        "totalPrice": 200.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Onions (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 35.0,
+        "totalPrice": 35.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Tomatoes (500g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 25.0,
+        "totalPrice": 25.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Maggi Ketchup (500g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 110.0,
+        "totalPrice": 110.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Parle-G Biscuits (Large Pack)",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 50.0,
+        "totalPrice": 50.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Eggs (12 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Cafe Coffee Day",
+    "purchasedAt": "15-06-2025 11:00",
+    "totalAmount": 280.0,
+    "currency": "INR",
+    "taxAmount": 28.0,
+    "purchaseNumber": "CCD20250615011",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Cappuccino",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 150.0,
+        "totalPrice": 150.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Chocolate Donut",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 130.0,
+        "totalPrice": 130.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Vegetable Vendor",
+    "purchasedAt": "17-06-2025 08:30",
+    "totalAmount": 180.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LVV20250617012",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Potatoes (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 40.0,
+        "totalPrice": 40.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Onions (500g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 20.0,
+        "totalPrice": 20.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Tomatoes (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 45.0,
+        "totalPrice": 45.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Coriander Leaves",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 15.0,
+        "totalPrice": 15.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Green Chillies",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 10.0,
+        "totalPrice": 10.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Apollo Pharmacy",
+    "purchasedAt": "18-06-2025 17:00",
+    "totalAmount": 250.0,
+    "currency": "INR",
+    "taxAmount": 12.5,
+    "purchaseNumber": "APOLLO20250618013",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Dolo 650 (10 tablets)",
+        "category": "Health & Wellness",
+        "quantity": 1,
+        "unitPrice": 30.0,
+        "totalPrice": 30.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Band-Aid (10 Pcs)",
+        "category": "Health & Wellness",
+        "quantity": 1,
+        "unitPrice": 50.0,
+        "totalPrice": 50.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Hand Sanitizer (100ml)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 170.0,
+        "totalPrice": 170.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "D-Mart",
+    "purchasedAt": "22-06-2025 17:45",
+    "totalAmount": 3120.0,
+    "currency": "INR",
+    "taxAmount": 156.0,
+    "purchaseNumber": "DMART20250622015",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Aashirvaad Atta (5kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 270.0,
+        "totalPrice": 270.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Tata Salt (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 25.0,
+        "totalPrice": 25.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Dove Shampoo (340ml)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 280.0,
+        "totalPrice": 280.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Lizol Floor Cleaner (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 190.0,
+        "totalPrice": 190.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Lays Potato Chips (Large)",
+        "category": "Snacks",
+        "quantity": 3,
+        "unitPrice": 50.0,
+        "totalPrice": 150.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Coca-Cola (2L)",
+        "category": "Beverages",
+        "quantity": 2,
+        "unitPrice": 85.0,
+        "totalPrice": 170.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Dettol Soap (4 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 180.0,
+        "totalPrice": 180.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Fresh Vegetables (Assorted)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 220.0,
+        "totalPrice": 220.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Dairy Milk Chocolate (100g)",
+        "category": "Snacks",
+        "quantity": 2,
+        "unitPrice": 100.0,
+        "totalPrice": 200.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Swiggy",
+    "purchasedAt": "24-06-2025 20:30",
+    "totalAmount": 520.0,
+    "currency": "INR",
+    "taxAmount": 52.0,
+    "purchaseNumber": "SWG20250624016",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Paneer Butter Masala",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 380.0,
+        "totalPrice": 380.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Butter Naan",
+        "category": "Dining",
+        "quantity": 2,
+        "unitPrice": 70.0,
+        "totalPrice": 140.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Kirana Store",
+    "purchasedAt": "26-06-2025 08:00",
+    "totalAmount": 125.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LKS20250626017",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 68.0,
+        "totalPrice": 68.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Eggs (6 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 57.0,
+        "totalPrice": 57.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Cafe",
+    "purchasedAt": "01-07-2025 10:30",
+    "totalAmount": 180.0,
+    "currency": "INR",
+    "taxAmount": 18.0,
+    "purchaseNumber": "LC20250701020",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Cold Coffee",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Veg Puff",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 60.0,
+        "totalPrice": 60.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Big Bazaar",
+    "purchasedAt": "03-07-2025 19:00",
+    "totalAmount": 2980.25,
+    "currency": "INR",
+    "taxAmount": 149.0,
+    "purchaseNumber": "BB20250703021",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Daawat Basmati Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 115.0,
+        "totalPrice": 115.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 3,
+        "unitPrice": 65.0,
+        "totalPrice": 195.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Britannia Marie Gold Biscuits",
+        "category": "Snacks",
+        "quantity": 2,
+        "unitPrice": 28.0,
+        "totalPrice": 56.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Fresh Vegetables Mix (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 160.0,
+        "totalPrice": 160.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Vim Dishwash Liquid (500ml)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 90.0,
+        "totalPrice": 90.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Patanjali Honey (250g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Sunfeast Yippee Noodles (4 Pcs)",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 65.0,
+        "totalPrice": 65.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Rent Payment",
+    "purchasedAt": "05-07-2025 12:00",
+    "totalAmount": 15000.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "RENT20250705022",
+    "paymentMethod": "Bank Transfer",
+    "items": [
+      {
+        "name": "Monthly House Rent",
+        "category": "Utilities",
+        "quantity": 1,
+        "unitPrice": 15000.0,
+        "totalPrice": 15000.0,
+        "isSubscription": true,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Uber",
+    "purchasedAt": "06-07-2025 22:00",
+    "totalAmount": 250.0,
+    "currency": "INR",
+    "taxAmount": 12.5,
+    "purchaseNumber": "UBER20250706023",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Late Night Ride",
+        "category": "Transportation",
+        "quantity": 1,
+        "unitPrice": 250.0,
+        "totalPrice": 250.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Kirana Store",
+    "purchasedAt": "08-07-2025 08:00",
+    "totalAmount": 135.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LKS20250708024",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 68.0,
+        "totalPrice": 68.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Bread (White)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 37.0,
+        "totalPrice": 37.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Cafe",
+    "purchasedAt": "07-07-2025 15:30",
+    "totalAmount": 220.0,
+    "currency": "INR",
+    "taxAmount": 22.0,
+    "purchaseNumber": "LC20250707001H",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Masala Chai",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 80.0,
+        "totalPrice": 80.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Samosa",
+        "category": "Snacks",
+        "quantity": 2,
+        "unitPrice": 70.0,
+        "totalPrice": 140.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Vegetable Vendor",
+    "purchasedAt": "11-07-2025 08:30",
+    "totalAmount": 170.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LVV20250711001J",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Potatoes (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 45.0,
+        "totalPrice": 45.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Onions (500g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 22.0,
+        "totalPrice": 22.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Tomatoes (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 50.0,
+        "totalPrice": 50.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Capsicum (250g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 30.0,
+        "totalPrice": 30.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Swiggy",
+    "purchasedAt": "13-07-2025 20:00",
+    "totalAmount": 480.0,
+    "currency": "INR",
+    "taxAmount": 48.0,
+    "purchaseNumber": "SWG20250713001K",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Pizza (Medium)",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 400.0,
+        "totalPrice": 400.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Coca-Cola (600ml)",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 80.0,
+        "totalPrice": 80.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Big Bazaar",
+    "purchasedAt": "15-07-2025 17:00",
+    "totalAmount": 1300.0,
+    "currency": "INR",
+    "taxAmount": 65.0,
+    "purchaseNumber": "BB20250715001L",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 2,
+        "unitPrice": 65.0,
+        "totalPrice": 130.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Britannia Good Day Biscuits",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 30.0,
+        "totalPrice": 30.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Eggs (12 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 85.0,
+        "totalPrice": 85.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Surf Excel Detergent (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 175.0,
+        "totalPrice": 175.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Colgate Toothpaste (150g)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 99.0,
+        "totalPrice": 99.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Tailor",
+    "purchasedAt": "17-07-2025 16:00",
+    "totalAmount": 400.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LT20250717001M",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Trouser Alteration",
+        "category": "Services",
+        "quantity": 1,
+        "unitPrice": 250.0,
+        "totalPrice": 250.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Shirt Stitching",
+        "category": "Services",
+        "quantity": 1,
+        "unitPrice": 150.0,
+        "totalPrice": 150.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Kirana Store",
+    "purchasedAt": "20-07-2025 08:00",
+    "totalAmount": 140.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LKS20250720030",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 68.0,
+        "totalPrice": 68.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Bread (Brown)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 35.0,
+        "totalPrice": 35.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Eggs (12 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 37.0,
+        "totalPrice": 37.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Gym Powerhouse",
+    "purchasedAt": "22-07-2025 09:00",
+    "totalAmount": 12000.0,
+    "currency": "INR",
+    "taxAmount": 1800.0,
+    "purchaseNumber": "GYM20250722031",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Annual Gym Membership",
+        "category": "Health & Wellness",
+        "quantity": 1,
+        "unitPrice": 12000.0,
+        "totalPrice": 12000.0,
+        "isSubscription": true,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Cafe Coffee Day",
+    "purchasedAt": "24-07-2025 11:00",
+    "totalAmount": 280.0,
+    "currency": "INR",
+    "taxAmount": 28.0,
+    "purchaseNumber": "CCD20250724032",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Cappuccino",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 150.0,
+        "totalPrice": 150.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Chocolate Donut",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 130.0,
+        "totalPrice": 130.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Kirana Store",
+    "purchasedAt": "26-07-2025 08:00",
+    "totalAmount": 130.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LKS20250726001X",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Amul Taaza Milk (1L)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 68.0,
+        "totalPrice": 68.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Bread (White)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 35.0,
+        "totalPrice": 35.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Eggs (6 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 27.0,
+        "totalPrice": 27.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "McDonald's",
+    "purchasedAt": "06-06-2025 14:00",
+    "totalAmount": 300.0,
+    "currency": "INR",
+    "taxAmount": 30.0,
+    "purchaseNumber": "MCD20250606001Y",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "McAloo Tikki Burger Meal",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 250.0,
+        "totalPrice": 250.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Coke (Medium)",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 50.0,
+        "totalPrice": 50.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Domino's Pizza",
+    "purchasedAt": "13-06-2025 20:00",
+    "totalAmount": 650.0,
+    "currency": "INR",
+    "taxAmount": 65.0,
+    "purchaseNumber": "DOM20250613001Z",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Farmhouse Pizza (Medium)",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 550.0,
+        "totalPrice": 550.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Garlic Breadsticks",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 100.0,
+        "totalPrice": 100.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Ice Cream Parlour",
+    "purchasedAt": "09-07-2025 21:00",
+    "totalAmount": 180.0,
+    "currency": "INR",
+    "taxAmount": 9.0,
+    "purchaseNumber": "ICP20250709002A",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Chocolate Sundae",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 180.0,
+        "totalPrice": 180.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Cafe",
+    "purchasedAt": "16-07-2025 10:00",
+    "totalAmount": 200.0,
+    "currency": "INR",
+    "taxAmount": 20.0,
+    "purchaseNumber": "LC20250716002B",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "Latte",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 130.0,
+        "totalPrice": 130.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Veg Sandwich",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 70.0,
+        "totalPrice": 70.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Big Bazaar",
+    "purchasedAt": "20-06-2025 16:00",
+    "totalAmount": 150.0,
+    "currency": "INR",
+    "taxAmount": 7.5,
+    "purchaseNumber": "BB20250620002C",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Dairy Milk Silk (150g)",
+        "category": "Snacks",
+        "quantity": 1,
+        "unitPrice": 150.0,
+        "totalPrice": 150.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Local Tea Stall",
+    "purchasedAt": "10-07-2025 09:00",
+    "totalAmount": 20.0,
+    "currency": "INR",
+    "taxAmount": 0.0,
+    "purchaseNumber": "LTS20250710002D",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Chai",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 20.0,
+        "totalPrice": 20.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Zomato",
+    "purchasedAt": "27-07-2025 13:00",
+    "totalAmount": 380.0,
+    "currency": "INR",
+    "taxAmount": 38.0,
+    "purchaseNumber": "ZMT20250727002E",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "South Indian Combo",
+        "category": "Dining",
+        "quantity": 1,
+        "unitPrice": 300.0,
+        "totalPrice": 300.0,
+        "isSubscription": false,
+        "tax": 0
+      },
+      {
+        "name": "Filter Coffee",
+        "category": "Beverages",
+        "quantity": 1,
+        "unitPrice": 65.0,
+        "totalPrice": 65.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Village Supermarket",
+    "purchasedAt": "15-06-2025 10:00",
+    "totalAmount": 96.0,
+    "currency": "INR",
+    "taxAmount": 4.8,
+    "purchaseNumber": "VSM20250615001",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "Eggs (12 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 96.0,
+        "totalPrice": 96.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "More Supermarket",
+    "purchasedAt": "01-07-2025 10:00",
+    "totalAmount": 120.0,
+    "currency": "INR",
+    "taxAmount": 6.0,
+    "purchaseNumber": "MORE20250701001",
+    "paymentMethod": "Card",
+    "items": [
+      {
+        "name": "Eggs (12 Pcs)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Village Supermarket",
+    "purchasedAt": "08-06-2025 11:00",
+    "totalAmount": 80.0,
+    "currency": "INR",
+    "taxAmount": 4.0,
+    "purchaseNumber": "VSM20250608001R",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 80.0,
+        "totalPrice": 80.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Reliance Smart",
+    "purchasedAt": "15-06-2025 10:00",
+    "totalAmount": 120.0,
+    "currency": "INR",
+    "taxAmount": 6.0,
+    "purchaseNumber": "RS20250615001R",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Village Supermarket",
+    "purchasedAt": "22-06-2025 11:00",
+    "totalAmount": 80.0,
+    "currency": "INR",
+    "taxAmount": 4.0,
+    "purchaseNumber": "VSM20250622001R",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 80.0,
+        "totalPrice": 80.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Reliance Smart",
+    "purchasedAt": "29-06-2025 10:00",
+    "totalAmount": 120.0,
+    "currency": "INR",
+    "taxAmount": 6.0,
+    "purchaseNumber": "RS20250629001R",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Village Supermarket",
+    "purchasedAt": "06-07-2025 11:00",
+    "totalAmount": 80.0,
+    "currency": "INR",
+    "taxAmount": 4.0,
+    "purchaseNumber": "VSM20250706001R",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 80.0,
+        "totalPrice": 80.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Reliance Smart",
+    "purchasedAt": "13-07-2025 10:00",
+    "totalAmount": 120.0,
+    "currency": "INR",
+    "taxAmount": 6.0,
+    "purchaseNumber": "RS20250713001R",
+    "paymentMethod": "UPI",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  },
+  {
+    "merchantName": "Village Supermarket",
+    "purchasedAt": "20-07-2025 11:00",
+    "totalAmount": 80.0,
+    "currency": "INR",
+    "taxAmount": 4.0,
+    "purchaseNumber": "VSM20250720001R",
+    "paymentMethod": "Cash",
+    "items": [
+      {
+        "name": "White Rice (1kg)",
+        "category": "Groceries",
+        "quantity": 1,
+        "unitPrice": 80.0,
+        "totalPrice": 80.0,
+        "isSubscription": false,
+        "tax": 0
+      }
+    ]
+  }
+]

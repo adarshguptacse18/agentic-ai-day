@@ -1,10 +1,7 @@
 # agentic_ai/agent.py
 
 from google.adk.agents import Agent
-from agentic_ai.tools import (
-    save_attachment_data,
-    get_all_data_for_a_user
-)
+from agentic_ai.tools import save_attachment_data, get_all_purchases_for_a_user
 from agentic_ai.callbacks import modify_image_data_in_history
 import os
 from settings import get_settings
@@ -26,13 +23,10 @@ root_agent = Agent(
     name="expense_manager_agent",
     model="gemini-2.5-flash",
     description=(
-        "Personal expense agent to help user track expenses, analyze receipts, and manage their financial records"
+        "Personal expense agent to help user track expenses, analyze receipts and purchases, and manage their financial records"
     ),
     instruction=task_prompt,
-    tools=[
-        save_attachment_data,
-        get_all_data_for_a_user
-    ],
+    tools=[save_attachment_data, get_all_purchases_for_a_user],
     planner=BuiltInPlanner(
         thinking_config=types.ThinkingConfig(
             thinking_budget=24576,

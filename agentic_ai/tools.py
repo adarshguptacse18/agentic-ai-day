@@ -11,6 +11,7 @@ from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
 from settings import get_settings
 from google import genai
 from google.adk.tools import ToolContext
+import time
 
 SETTINGS = get_settings()
 DB_CLIENT = firestore.Client(
@@ -26,37 +27,30 @@ def save_attachment_data(
 ) -> str:
     """
     Store document data in the database from JSON format.
-
     Args:
         json_data (Dict[str, Any]): JSON data containing document information with the following structure:
-            {
-                "documentType": "String", // "Receipt", "Product", "Warranty", "Other"
-                "isPartialReceipt": "Boolean", // Only for "Receipt"
-                "extractedData": {
-                    "receiptDetails": {
-                        "merchantName": "String",
-                        "purchaseDate": "String", // YYYY-MM-DD
-                        "purchaseTime": "String", // HH:MM:SS
-                        "totalAmount": "Number",
-                        "currency": "String",
-                        "taxAmount": "Number",
-                        "discountAmount": "Number",
-                        "paymentMethod": "String",
-                        "receiptNumber": "String",
-                        "items": [
-                            {
-                                "name": "String",
-                                "quantity": "Number",
-                                "unitPrice": "Number",
-                                "lineTotal": "Number",
-                                "category": "String"
-                            }
-                        ]
-                    },
-                    "productDetails": { ... },
-                    "warrantyDetails": { ... }
+        
+        {
+            "merchantName": "String",
+            "purchasedAt": "String", // YYYY-MM-DD HH:MM:SS
+            "totalAmount": "Number",
+            "currency": "String",
+            "taxAmount": "Number",
+            "purchaseNumber": "String",
+            "paymentMethod": "String",
+            "items": [
+                {
+                    "name": "String",
+                    "category": "String",
+                    "quantity": "Number",
+                    "unitPrice": "Number",
+                    "totalPrice": "Number",
+                    "isSubscription": "Boolean",
+                    "tax": "Number",
                 }
-            }
+            ]
+        }
+        
         tool_context (ToolContext): The tool context containing user and session information.
     Returns:
         str: A success message with the document ID.
@@ -64,32 +58,30 @@ def save_attachment_data(
     Raises:
         Exception: If the operation failed or input is invalid.
     """
+    start_time = time.time()
     try:
         # Validate JSON structure
         if not isinstance(json_data, dict):
             raise ValueError("json_data must be a dictionary")
 
-        if "documentType" not in json_data:
-            raise ValueError("documentType is required in json_data")
-
-        if "extractedData" not in json_data:
-            raise ValueError("extractedData is required in json_data")
-        
         user_id = tool_context._invocation_context.user_id
         COLLECTION.add({"user_id": user_id, "data": json_data})
-
+        end_time = time.time()
+        print(f"TIME TAKEN TO SAVE DOCUMENT: {end_time - start_time} seconds")
         return json_data
     except Exception as e:
+        end_time = time.time()
+        print(f"TIME TAKEN TO SAVE DOCUMENT (---ERROR---): {end_time - start_time} seconds")
         raise Exception(f"Failed to store document: {str(e)}")
 
 
 
-# TODO: This needs to be implemented properly. Please update this to get all via user id 
-def get_all_data_for_a_user(
+def get_all_purchases_for_a_user(
     tool_context: ToolContext,
 ) -> str:
     """
-    This function extracts all the transactions for a user 
+    This function returns all the purchases and its details for a user.
+    Purchases contains transaction data and individual items purchased.
 
     Args:
         tool_context (ToolContext): The tool context containing user and session information.
@@ -97,36 +89,29 @@ def get_all_data_for_a_user(
     Returns:
         json_data (List[Dict[str, Any]]): A list of dictionaries containing document information, where each dictionary has the following structure:
             {
-                "documentType": "String", // "Receipt", "Product", "Warranty", "Other"
-                "isPartialReceipt": "Boolean", // Only for "Receipt"
-                "extractedData": {
-                    "receiptDetails": {
-                        "merchantName": "String",
-                        "purchaseDate": "String", // YYYY-MM-DD
-                        "purchaseTime": "String", // HH:MM:SS
-                        "totalAmount": "Number",
-                        "currency": "String",
-                        "taxAmount": "Number",
-                        "discountAmount": "Number",
-                        "paymentMethod": "String",
-                        "receiptNumber": "String",
-                        "items": [
-                            {
-                                "name": "String",
-                                "quantity": "Number",
-                                "unitPrice": "Number",
-                                "lineTotal": "Number",
-                                "category": "String"
-                            }
-                        ]
-                    },
-                    "productDetails": { ... },
-                    "warrantyDetails": { ... }
+            "merchantName": "String",
+            "purchasedAt": "String", // YYYY-MM-DD HH:MM:SS
+            "totalAmount": "Number",
+            "currency": "String",
+            "taxAmount": "Number",
+            "purchaseNumber": "String",
+            "paymentMethod": "String",
+            "items": [
+                {
+                    "name": "String",
+                    "category": "String"
+                    "quantity": "Number",
+                    "unitPrice": "Number",
+                    "totalPrice": "Number",
+                    "isSubscription": "Boolean",
+                    "tax": "Number",
                 }
-            }
+            ]
+        }
     Raises:
         Exception: If the search failed or input is invalid.
     """
+    start_time = time.time()
     try:
         # Start with the base collection reference
         query = COLLECTION
@@ -149,7 +134,29 @@ def get_all_data_for_a_user(
         for doc in query.stream():
             data = doc.to_dict()
             final_results.append(data["data"])
+        end_time = time.time()
+        print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER: {end_time - start_time} seconds")
         return final_results
     except Exception as e:
+        end_time = time.time()
+        print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER (---ERROR---): {end_time - start_time} seconds")
         raise Exception(f"Error filtering receipts: {str(e)}")
 
+
+
+# def save_all_the_demo_transactions(
+#     tool_context: ToolContext,
+# ) -> str:
+#     """
+#     This function saves all the demo transactions to the database.
+#     """
+#     import json
+#     try:
+#         with open("agentic_ai/datasetv2.json", "r") as file:
+#             data = json.load(file)
+#             for item in data:
+#                 COLLECTION.add({"user_id": tool_context._invocation_context.user_id, "data": item})
+#         return "All the demo transactions have been saved to the database."
+#     except Exception as e:
+#         print('got error in save all the demo transactions ------------')
+#         raise Exception(f"Error saving demo transactions: {str(e)}")
