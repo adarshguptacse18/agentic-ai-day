@@ -112,6 +112,7 @@ Output JSON Schema for "Insights" screen (Strictly adhere to this structure and 
 ### Request type - Generate data for "Dashboard" screen
 For recent spending, use 3 most recent purchased items. These most recent items can be from a single purchase or multiple purchases. 
 Top spending categories data should be sorted in descending order of total amount and only upto 3 categories.
+For "saveMore" data, only populate items when the item have more than 2% difference in cheaper and higher prices.
 
 Output JSON Schema for "Dashboard" screen (Strictly adhere to this structure and data types for UI placeholders):
 ```json
@@ -156,6 +157,8 @@ Output JSON Schema for "Dashboard" screen (Strictly adhere to this structure and
 }
 ```
 
+
+IMPORTANT - When asked for Insight screen data, only send the Insight screen json data. When asked for Dashboard screen data, only send Dashboard screen json data. 
 ---
 
 ## Tool Suggestion Guidelines

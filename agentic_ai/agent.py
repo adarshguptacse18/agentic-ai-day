@@ -29,7 +29,7 @@ root_agent = Agent(
     tools=[save_attachment_data, get_all_purchases_for_a_user],
     planner=BuiltInPlanner(
         thinking_config=types.ThinkingConfig(
-            thinking_budget=24576,
+            thinking_budget=8096,
         )
     ),
     before_model_callback=modify_image_data_in_history,

@@ -12,6 +12,7 @@ from settings import get_settings
 from google import genai
 from google.adk.tools import ToolContext
 import time
+import json
 
 SETTINGS = get_settings()
 DB_CLIENT = firestore.Client(
@@ -87,7 +88,7 @@ def get_all_purchases_for_a_user(
         tool_context (ToolContext): The tool context containing user and session information.
 
     Returns:
-        json_data (List[Dict[str, Any]]): A list of dictionaries containing document information, where each dictionary has the following structure:
+        JSON string with following structure (List[Dict[str, Any]]): A list of dictionaries containing document information, where each dictionary has the following structure:
             {
             "merchantName": "String",
             "purchasedAt": "String", // YYYY-MM-DD HH:MM:SS
@@ -136,7 +137,9 @@ def get_all_purchases_for_a_user(
             final_results.append(data["data"])
         end_time = time.time()
         print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER: {end_time - start_time} seconds")
-        return final_results
+        
+        # stringify the final_results
+        return json.dumps(final_results)
     except Exception as e:
         end_time = time.time()
         print(f"TIME TAKEN TO GET ALL PURCHASES FOR A USER (---ERROR---): {end_time - start_time} seconds")
